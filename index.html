@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Center Lab</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <header class="site-header">
+        <div class="header-inner">
+          <a class="brand" href="#" aria-label="Bendoesit home">Bendoesit</a>
+          <a class="header-cta" href="#contacto">Contáctame</a>
+          <button class="mobile-menu-button" aria-expanded="false" aria-controls="main-navigation">
+            <span class="menu-icon"></span>
+            <span class="visually-hidden">Open menu</span>
+          </button>
+          <nav class="site-nav" id="main-navigation" aria-label="Main navigation">
+            <a href="#servicios">Servicios</a>
+            <a href="#casos">Trabajos</a>
+            <a href="#sobre-mi">Sobre mí</a>
+            <a href="#contacto">Contacto</a>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero-section">
+          <div class="hero-content">
+            <p class="hero-copy">
+              Tu presencia online completa. Web, fotos y Google Maps, para que tus clientes te encuentren antes que a la competencia.
+            </p>
+            <p class="hero-wordmark" aria-label="Presencia Online">
+              <span>Presencia</span>
+              <span>Online</span>
+            </p>
+            <h1>Mejor perfil online.<br />Más clientes en tu local.</h1>
+            <div class="image-strip" aria-label="Galeria de trabajos">
+              <svg class="icon-sprite" aria-hidden="true">
+                <symbol id="icon-map-pin" viewBox="0 0 24 24">
+                  <path d="M20 10c0 4.99-5.54 10.19-7.4 11.8a1 1 0 0 1-1.2 0C9.54 20.19 4 14.99 4 10a8 8 0 0 1 16 0Z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </symbol>
+                <symbol id="icon-globe" viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="M12 2a14.5 14.5 0 0 0 0 20"></path>
+                  <path d="M12 2a14.5 14.5 0 0 1 0 20"></path>
+                  <path d="M2 12h20"></path>
+                </symbol>
+                <symbol id="icon-camera" viewBox="0 0 24 24">
+                  <path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3Z"></path>
+                  <circle cx="12" cy="13" r="3"></circle>
+                </symbol>
+                <symbol id="icon-browser" viewBox="0 0 24 24">
+                  <rect width="18" height="14" x="3" y="5" rx="2"></rect>
+                  <path d="M3 9h18"></path>
+                  <path d="M7 13h4"></path>
+                  <path d="M7 16h8"></path>
+                </symbol>
+                <symbol id="icon-star" viewBox="0 0 24 24">
+                  <path d="M11.53 2.3a.5.5 0 0 1 .94 0l2.25 6.82a.5.5 0 0 0 .47.34h7.19a.5.5 0 0 1 .29.9l-5.82 4.22a.5.5 0 0 0-.18.56l2.22 6.83a.5.5 0 0 1-.77.56l-5.82-4.23a.5.5 0 0 0-.58 0l-5.82 4.23a.5.5 0 0 1-.77-.56l2.22-6.83a.5.5 0 0 0-.18-.56L1.33 10.36a.5.5 0 0 1 .29-.9h7.19a.5.5 0 0 0 .47-.34l2.25-6.82Z"></path>
+                </symbol>
+                <symbol id="icon-trending-up" viewBox="0 0 24 24">
+                  <path d="m22 7-8.5 8.5-5-5L2 17"></path>
+                  <path d="M16 7h6v6"></path>
+                </symbol>
+                <symbol id="icon-smartphone" viewBox="0 0 24 24">
+                  <rect width="14" height="20" x="5" y="2" rx="2" ry="2"></rect>
+                  <path d="M12 18h.01"></path>
+                </symbol>
+                <symbol id="icon-alert-triangle" viewBox="0 0 24 24">
+                  <path d="m21.73 18-8-14a2 2 0 0 0-3.46 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"></path>
+                  <path d="M12 9v4"></path>
+                  <path d="M12 17h.01"></path>
+                </symbol>
+              </svg>
+              <div class="image-strip-track">
+                <div class="image-strip-set">
+                  <div class="image-placeholder"><svg class="slide-icon" aria-label="Pin de ubicacion"><use href="#icon-map-pin"></use></svg></div>
+                  <div class="image-placeholder"><svg class="slide-icon" aria-label="Globo"><use href="#icon-globe"></use></svg></div>
+                  <div class="image-placeholder"><svg class="slide-icon" aria-label="Camara"><use href="#icon-camera"></use></svg></div>
+                  <div class="image-placeholder"><svg class="slide-icon" aria-label="Estrella"><use href="#icon-star"></use></svg></div>
+                  <div class="image-placeholder"><svg class="slide-icon" aria-label="Grafico subiendo"><use href="#icon-trending-up"></use></svg></div>
+                  <div class="image-placeholder"><svg class="slide-icon" aria-label="Celular"><use href="#icon-smartphone"></use></svg></div>
+                  <div class="image-placeholder"><svg class="slide-icon" aria-label="Pin de ubicacion"><use href="#icon-map-pin"></use></svg></div>
+                  <div class="image-placeholder"><svg class="slide-icon" aria-label="Globo"><use href="#icon-globe"></use></svg></div>
+                  <div class="image-placeholder"><svg class="slide-icon" aria-label="Camara"><use href="#icon-camera"></use></svg></div>
+                  <div class="image-placeholder"><svg class="slide-icon" aria-label="Estrella"><use href="#icon-star"></use></svg></div>
+                  <div class="image-placeholder"><svg class="slide-icon" aria-label="Grafico subiendo"><use href="#icon-trending-up"></use></svg></div>
+                  <div class="image-placeholder"><svg class="slide-icon" aria-label="Celular"><use href="#icon-smartphone"></use></svg></div>
+                </div>
+                <div class="image-strip-set" aria-hidden="true">
+                  <div class="image-placeholder"><svg class="slide-icon"><use href="#icon-map-pin"></use></svg></div>
+                  <div class="image-placeholder"><svg class="slide-icon"><use href="#icon-globe"></use></svg></div>
+                  <div class="image-placeholder"><svg class="slide-icon"><use href="#icon-camera"></use></svg></div>
+                  <div class="image-placeholder"><svg class="slide-icon"><use href="#icon-star"></use></svg></div>
+                  <div class="image-placeholder"><svg class="slide-icon"><use href="#icon-trending-up"></use></svg></div>
+                  <div class="image-placeholder"><svg class="slide-icon"><use href="#icon-smartphone"></use></svg></div>
+                  <div class="image-placeholder"><svg class="slide-icon"><use href="#icon-map-pin"></use></svg></div>
+                  <div class="image-placeholder"><svg class="slide-icon"><use href="#icon-globe"></use></svg></div>
+                  <div class="image-placeholder"><svg class="slide-icon"><use href="#icon-camera"></use></svg></div>
+                  <div class="image-placeholder"><svg class="slide-icon"><use href="#icon-star"></use></svg></div>
+                  <div class="image-placeholder"><svg class="slide-icon"><use href="#icon-trending-up"></use></svg></div>
+                  <div class="image-placeholder"><svg class="slide-icon"><use href="#icon-smartphone"></use></svg></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section-problem" id="problema">
+          <div class="section-content">
+            <h2>El problema</h2>
+            <p class="section-lede">¿Tu negocio está optimizado para que te encuentren en Google?</p>
+            <p>
+               Cada día hay personas buscando exactamente lo que vos ofrecés. Si tu presencia online está abandonada o incompleta, esos clientes encuentran a la competencia antes que a vos.
+            </p>
+            <div class="diagnostic-card" aria-labelledby="diagnostico-problema">
+              <div class="diagnostic-heading">
+                <svg class="diagnostic-heading-icon" aria-hidden="true"><use href="#icon-alert-triangle"></use></svg>
+                <h3 id="diagnostico-problema">LO QUE EST&Aacute; PASANDO</h3>
+              </div>
+              <div class="diagnostic-list">
+                <article class="diagnostic-item">
+                  <svg class="diagnostic-icon" aria-hidden="true"><use href="#icon-map-pin"></use></svg>
+                  <div>
+                    <h4>Perfil de Google incompleto</h4>
+                    <p>Un perfil desactualizado reduce tus chances de aparecer cuando alguien busca tu servicio.</p>
+                  </div>
+                </article>
+                <article class="diagnostic-item">
+                  <svg class="diagnostic-icon" aria-hidden="true"><use href="#icon-camera"></use></svg>
+                  <div>
+                    <h4>Fotos que no representan tu negocio</h4>
+                    <p>Las primeras im&aacute;genes que ve un cliente online definen si entra o sigue buscando.</p>
+                  </div>
+                </article>
+                <article class="diagnostic-item">
+                  <svg class="diagnostic-icon" aria-hidden="true"><use href="#icon-smartphone"></use></svg>
+                  <div>
+                    <h4>Presencia en redes sin actividad</h4>
+                    <p>Un perfil sin contenido reciente transmite que el negocio no est&aacute; activo.</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section-services" id="servicios">
+          <div class="section-content">
+            <h2>¿Qué hago?</h2>
+            <p class="section-lede">Así mejoro tu presencia</p>
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-wrap">
+                  <svg class="service-icon" aria-hidden="true"><use href="#icon-browser"></use></svg>
+                </div>
+                <div class="service-copy">
+                  <h3>Sitio Web</h3>
+                  <p>Te armo un sitio web r&aacute;pido, prolijo y optimizado para que Google lo encuentre f&aacute;cil.</p>
+                </div>
+              </li>
+              <li class="service-item">
+                <div class="service-icon-wrap">
+                  <svg class="service-icon" aria-hidden="true"><use href="#icon-map-pin"></use></svg>
+                </div>
+                <div class="service-copy">
+                  <h3>Google Maps</h3>
+                  <p>Optimizo tu perfil de Google, consigo m&aacute;s rese&ntilde;as y te posiciono cuando alguien busca tu rubro.</p>
+                </div>
+              </li>
+              <li class="service-item">
+                <div class="service-icon-wrap">
+                  <svg class="service-icon" aria-hidden="true"><use href="#icon-camera"></use></svg>
+                </div>
+                <div class="service-copy">
+                  <h3>Fotos, Videos e Instagram</h3>
+                  <p>Saco fotos y videos reales de tu local, optimizo tu Instagram y lo dejo actualizado para que tu presencia online refleje lo que realmente sos.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="section section-cases" id="casos">
+          <div class="section-content">
+            <h2>Casos</h2>
+            <p class="section-lede">Resultados reales, documentados con contexto y detalle.</p>
+            <p class="empty-state">(Vacío por ahora - se completa en 3 semanas)</p>
+          </div>
+        </section>
+
+        <section class="section section-about" id="sobre-mi">
+          <div class="section-content">
+            <p class="section-lede">Un profesional enfocado en negocios que quieren crecer de verdad.</p>
+            <h2>¿Quién soy?</h2>
+            <p>
+              Soy Benjamin, un desarrollador de Buenos Aires. Crecí viendo negocios increíbles en la zona que nadie encontraba online. Hoy me dedico a cambiar eso, mejoro la presencia digital de negocios locales para que puedan seguir ofreciendo sus servicios más allá de las paredes de su local.
+            </p>
+          </div>
+        </section>
+
+        <section class="section section-contact" id="contacto">
+          <div class="section-content">
+            <p class="section-lede">Hablemos de lo que tu presencia online necesita.</p>
+            <p>
+              Si querés mejorar tu presencia online o tenés alguna pregunta, escribime directamente.
+            </p>
+            <a class="button button-primary" href="https://wa.me/" target="_blank" rel="noopener noreferrer">
+              Contactame por WhatsApp
+            </a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>&copy; 2026 Bendoesit. Presencia online y posicionamiento local para negocios.</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
