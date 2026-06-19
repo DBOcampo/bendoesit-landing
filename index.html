@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,8 +8,9 @@
     <title>Bendoesit | Presencia Online para Negocios Locales</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="mockups.css" />
     <link rel="canonical" href="https://bendoesit.ar/">
       <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-8C41W26T4Q"></script>
@@ -56,8 +57,10 @@
     <div class="page-wrapper">
       <header class="site-header">
         <div class="header-inner">
-          <a class="brand" href="#" aria-label="Bendoesit home">Bendoesit</a>
-          <a class="header-cta" href="#contacto">Contáctame</a>
+          <a class="brand" href="#" aria-label="Bendoesit home">
+            <img class="brand-logo" src="assets/logo%20bendoesit.png" alt="" />
+            <span class="brand-name">Bendoesit</span>
+          </a>
           <button class="mobile-menu-button" aria-expanded="false" aria-controls="main-navigation">
             <span class="menu-icon"></span>
             <span class="visually-hidden">Open menu</span>
@@ -68,6 +71,7 @@
             <a href="#sobre-mi">Sobre mí</a>
             <a href="#contacto">Contacto</a>
           </nav>
+          <a class="header-cta" href="#contacto">Contáctame</a>
         </div>
       </header>
 
@@ -75,15 +79,19 @@
         <section class="hero-section">
           <div class="hero-content">
             <p class="hero-copy">
-              Tu presencia online completa. Web, fotos y Google Maps, para que tus clientes te encuentren antes que a la competencia.
+              Sitio web, fotos y Google Maps, para que tus clientes te encuentren antes que a la competencia.
             </p>
+            <a class="hero-copy-cta" href="#contacto">
+              <span>Nuevo</span>
+              <span>Agendar llamada</span>
+              <span aria-hidden="true">→</span>
+            </a>
             <p class="hero-wordmark" aria-label="Presencia Online">
               <span>Presencia</span>
               <span>Online</span>
             </p>
-            <h1>Mejor perfil online.<br />Más clientes en tu local.</h1>
-            <div class="image-strip" aria-label="Galeria de trabajos">
-              <svg class="icon-sprite" aria-hidden="true">
+            <h1>Presencia Online, <br/>más visibilidad para tu negocio.</h1>
+            <svg class="icon-sprite" aria-hidden="true">
                 <symbol id="icon-map-pin" viewBox="0 0 24 24">
                   <path d="M20 10c0 4.99-5.54 10.19-7.4 11.8a1 1 0 0 1-1.2 0C9.54 20.19 4 14.99 4 10a8 8 0 0 1 16 0Z"></path>
                   <circle cx="12" cy="10" r="3"></circle>
@@ -120,37 +128,377 @@
                   <path d="M12 9v4"></path>
                   <path d="M12 17h.01"></path>
                 </symbol>
-              </svg>
-              <div class="image-strip-track">
-                <div class="image-strip-set">
-                  <div class="image-placeholder"><svg class="slide-icon" aria-label="Pin de ubicacion"><use href="#icon-map-pin"></use></svg></div>
-                  <div class="image-placeholder"><svg class="slide-icon" aria-label="Globo"><use href="#icon-globe"></use></svg></div>
-                  <div class="image-placeholder"><svg class="slide-icon" aria-label="Camara"><use href="#icon-camera"></use></svg></div>
-                  <div class="image-placeholder"><svg class="slide-icon" aria-label="Estrella"><use href="#icon-star"></use></svg></div>
-                  <div class="image-placeholder"><svg class="slide-icon" aria-label="Grafico subiendo"><use href="#icon-trending-up"></use></svg></div>
-                  <div class="image-placeholder"><svg class="slide-icon" aria-label="Celular"><use href="#icon-smartphone"></use></svg></div>
-                  <div class="image-placeholder"><svg class="slide-icon" aria-label="Pin de ubicacion"><use href="#icon-map-pin"></use></svg></div>
-                  <div class="image-placeholder"><svg class="slide-icon" aria-label="Globo"><use href="#icon-globe"></use></svg></div>
-                  <div class="image-placeholder"><svg class="slide-icon" aria-label="Camara"><use href="#icon-camera"></use></svg></div>
-                  <div class="image-placeholder"><svg class="slide-icon" aria-label="Estrella"><use href="#icon-star"></use></svg></div>
-                  <div class="image-placeholder"><svg class="slide-icon" aria-label="Grafico subiendo"><use href="#icon-trending-up"></use></svg></div>
-                  <div class="image-placeholder"><svg class="slide-icon" aria-label="Celular"><use href="#icon-smartphone"></use></svg></div>
+            </svg>
+            <div class="desktop-mockups-row" aria-label="Mockups de presencia online">
+              <article class="desktop-gbp-mockup" aria-label="Mockup de perfil de Google Business optimizado">
+                    <div class="desktop-gbp-mockup__cover">
+                      <span class="desktop-gbp-mockup__cover-label">TU NEGOCIO</span>
+                      <span class="desktop-gbp-mockup__photo-badge">+24</span>
+                    </div>
+
+                    <div class="desktop-gbp-mockup__body">
+                      <div class="desktop-gbp-mockup__avatar">
+                        TN
+                      </div>
+
+                      <div class="desktop-gbp-mockup__main">
+                        <div class="desktop-gbp-mockup__header">
+                          <div>
+                            <h3>Tu Negocio</h3>
+
+                            <div class="desktop-gbp-mockup__rating">
+                              <span>5.0</span>
+                              <span class="desktop-gbp-mockup__stars">★★★★★</span>
+                              <span>(128 reseñas)</span>
+                            </div>
+
+                            <p>
+                              Negocio local · <span>Abierto</span>
+                            </p>
+                          </div>
+
+                          <div class="desktop-gbp-mockup__status">
+                            Perfil optimizado
+                          </div>
+                        </div>
+
+                        <div class="desktop-gbp-mockup__tabs">
+                          <span class="is-active">Resumen</span>
+                          <span>Reseñas</span>
+                          <span>Servicios</span>
+                          <span>Fotos</span>
+                          <span>Novedades</span>
+                        </div>
+
+                        <div class="desktop-gbp-mockup__actions">
+                          <div class="desktop-gbp-mockup__action">
+                            <div class="desktop-gbp-mockup__icon">
+                              <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 3 5.2 2 2 0 0 1 5 3h3a2 2 0 0 1 2 1.7l.4 2.4a2 2 0 0 1-.5 1.7L8.7 10a16 16 0 0 0 5.3 5.3l1.2-1.2a2 2 0 0 1 1.7-.5l2.4.4a2 2 0 0 1 1.7 2Z" />
+                              </svg>
+                            </div>
+                            <span>Llamar</span>
+                          </div>
+
+                          <div class="desktop-gbp-mockup__action">
+                            <div class="desktop-gbp-mockup__icon">
+                              <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M12 21s7-5.1 7-11a7 7 0 0 0-14 0c0 5.9 7 11 7 11Z" />
+                                <circle cx="12" cy="10" r="2.5" />
+                              </svg>
+                            </div>
+                            <span>Cómo llegar</span>
+                          </div>
+
+                          <div class="desktop-gbp-mockup__action">
+                            <div class="desktop-gbp-mockup__icon">
+                              <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M6 3h12v18l-6-3-6 3V3Z" />
+                              </svg>
+                            </div>
+                            <span>Guardar</span>
+                          </div>
+
+                          <div class="desktop-gbp-mockup__action">
+                            <div class="desktop-gbp-mockup__icon">
+                              <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <circle cx="12" cy="12" r="9" />
+                                <path d="M3 12h18" />
+                                <path d="M12 3c2.4 2.4 3.6 5.4 3.6 9S14.4 18.6 12 21" />
+                                <path d="M12 3C9.6 5.4 8.4 8.4 8.4 12s1.2 6.6 3.6 9" />
+                              </svg>
+                            </div>
+                            <span>Sitio web</span>
+                          </div>
+                        </div>
+
+                        <div class="desktop-gbp-mockup__bottom">
+                          <div class="desktop-gbp-mockup__info">
+                            <div class="desktop-gbp-mockup__info-row">
+                              <div class="desktop-gbp-mockup__info-icon">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                  <path d="M12 21s7-5.1 7-11a7 7 0 0 0-14 0c0 5.9 7 11 7 11Z" />
+                                  <circle cx="12" cy="10" r="2.5" />
+                                </svg>
+                              </div>
+                              <p>Pilar, Buenos Aires</p>
+                            </div>
+
+                            <div class="desktop-gbp-mockup__info-row">
+                              <div class="desktop-gbp-mockup__info-icon">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                  <circle cx="12" cy="12" r="9" />
+                                  <path d="M12 7v5l3 2" />
+                                </svg>
+                              </div>
+                              <p><span>Abierto</span> · Cierra a las 19:00</p>
+                            </div>
+
+                            <div class="desktop-gbp-mockup__info-row">
+                              <div class="desktop-gbp-mockup__info-icon">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                  <path d="M10 13a5 5 0 0 0 7.1 0l2-2a5 5 0 0 0-7.1-7.1l-1.1 1.1" />
+                                  <path d="M14 11a5 5 0 0 0-7.1 0l-2 2a5 5 0 0 0 7.1 7.1l1.1-1.1" />
+                                </svg>
+                              </div>
+                              <p>tunegocio.com</p>
+                            </div>
+                          </div>
+
+                          <div class="desktop-gbp-mockup__map">
+                            <span class="desktop-gbp-mockup__pin"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+              </article>
+              <article class="desktop-ig-mockup" aria-label="Mockup de perfil de Instagram optimizado">
+                <div class="desktop-ig-mockup__topbar">
+                  <span class="desktop-ig-mockup__back">←</span>
+
+                  <div class="desktop-ig-mockup__username">
+                    tunegocio
+                    <span class="desktop-ig-mockup__verified">✓</span>
+                  </div>
+
+                  <span class="desktop-ig-mockup__menu">•••</span>
                 </div>
-                <div class="image-strip-set" aria-hidden="true">
-                  <div class="image-placeholder"><svg class="slide-icon"><use href="#icon-map-pin"></use></svg></div>
-                  <div class="image-placeholder"><svg class="slide-icon"><use href="#icon-globe"></use></svg></div>
-                  <div class="image-placeholder"><svg class="slide-icon"><use href="#icon-camera"></use></svg></div>
-                  <div class="image-placeholder"><svg class="slide-icon"><use href="#icon-star"></use></svg></div>
-                  <div class="image-placeholder"><svg class="slide-icon"><use href="#icon-trending-up"></use></svg></div>
-                  <div class="image-placeholder"><svg class="slide-icon"><use href="#icon-smartphone"></use></svg></div>
-                  <div class="image-placeholder"><svg class="slide-icon"><use href="#icon-map-pin"></use></svg></div>
-                  <div class="image-placeholder"><svg class="slide-icon"><use href="#icon-globe"></use></svg></div>
-                  <div class="image-placeholder"><svg class="slide-icon"><use href="#icon-camera"></use></svg></div>
-                  <div class="image-placeholder"><svg class="slide-icon"><use href="#icon-star"></use></svg></div>
-                  <div class="image-placeholder"><svg class="slide-icon"><use href="#icon-trending-up"></use></svg></div>
-                  <div class="image-placeholder"><svg class="slide-icon"><use href="#icon-smartphone"></use></svg></div>
+
+                <div class="desktop-ig-mockup__body">
+                  <div class="desktop-ig-mockup__profile">
+                    <div class="desktop-ig-mockup__avatar">
+                      TN
+                    </div>
+
+                    <div class="desktop-ig-mockup__stats">
+                      <div>
+                        <strong>42</strong>
+                        <span>posts</span>
+                      </div>
+
+                      <div>
+                        <strong>2.184</strong>
+                        <span>seguidores</span>
+                      </div>
+
+                      <div>
+                        <strong>128</strong>
+                        <span>seguidos</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="desktop-ig-mockup__bio">
+                    <h3>Tu Negocio</h3>
+                    <p class="desktop-ig-mockup__category">Negocio local</p>
+
+                    <p>
+                      Servicios en Buenos Aires.<br>
+                      Más visibilidad. Más consultas.<br>
+                      <span>↓ Escribinos por WhatsApp</span>
+                    </p>
+
+                    <a href="#" aria-label="Link de ejemplo">tunegocio.com</a>
+                  </div>
+
+                  <div class="desktop-ig-mockup__buttons">
+                    <button type="button">Contactar</button>
+                    <button type="button">Reservar</button>
+                    <button type="button">⌄</button>
+                  </div>
+
+                  <div class="desktop-ig-mockup__highlights">
+                    <div>
+                      <span>
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                          <path d="M4 20V10" />
+                          <path d="M10 20V4" />
+                          <path d="M16 20v-7" />
+                          <path d="M22 20V8" />
+                        </svg>
+                      </span>
+                      <small>Servicios</small>
+                    </div>
+
+                    <div>
+                      <span>
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                          <path d="M20 7 9 18l-5-5" />
+                        </svg>
+                      </span>
+                      <small>Resultados</small>
+                    </div>
+
+                    <div>
+                      <span>
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                          <path d="M12 21s7-5.1 7-11a7 7 0 0 0-14 0c0 5.9 7 11 7 11Z" />
+                          <circle cx="12" cy="10" r="2.5" />
+                        </svg>
+                      </span>
+                      <small>Ubicación</small>
+                    </div>
+
+                    <div>
+                      <span>
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                          <path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4Z" />
+                        </svg>
+                      </span>
+                      <small>Turnos</small>
+                    </div>
+                  </div>
+
+                  <div class="desktop-ig-mockup__tabs">
+                    <span class="is-active">
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <rect x="4" y="4" width="6" height="6" />
+                        <rect x="14" y="4" width="6" height="6" />
+                        <rect x="4" y="14" width="6" height="6" />
+                        <rect x="14" y="14" width="6" height="6" />
+                      </svg>
+                    </span>
+
+                    <span>
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M8 3h8l2 18-6-3-6 3 2-18Z" />
+                      </svg>
+                    </span>
+
+                    <span>
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <circle cx="12" cy="8" r="4" />
+                        <path d="M4 21c1.8-4 14.2-4 16 0" />
+                      </svg>
+                    </span>
+                  </div>
+
+                  <div class="desktop-ig-mockup__grid">
+                    <div>
+                      <span>Estrategia que conecta.</span>
+                    </div>
+
+                    <div class="has-image"></div>
+
+                    <div>
+                      <span>Más clientes, menos dudas.</span>
+                    </div>
+
+                    <div class="has-image"></div>
+
+                    <div>
+                      <span>Resultados reales.</span>
+                    </div>
+
+                    <div class="has-image"></div>
+                  </div>
                 </div>
-              </div>
+              </article>
+              <article class="desktop-landing-mockup" aria-label="Mockup de landing page optimizada">
+                <div class="desktop-landing-mockup__topbar">
+                  <div class="desktop-landing-mockup__brand">
+                    <span>TN</span>
+                    <strong>Tu Negocio</strong>
+                  </div>
+
+                  <nav class="desktop-landing-mockup__nav" aria-label="Navegación del mockup">
+                    <span>Servicios</span>
+                    <span>Reseñas</span>
+                    <span>Contacto</span>
+                  </nav>
+                </div>
+
+                <div class="desktop-landing-mockup__hero">
+                  <div class="desktop-landing-mockup__copy">
+                    <p class="desktop-landing-mockup__eyebrow">
+                      Presencia online
+                    </p>
+
+                    <h3>
+                      Más visibilidad local. Más consultas reales.
+                    </h3>
+
+                    <p class="desktop-landing-mockup__text">
+                      Una landing clara, rápida y preparada para convertir búsquedas en contactos por WhatsApp.
+                    </p>
+
+                    <div class="desktop-landing-mockup__buttons">
+                      <button type="button">Hablemos por WhatsApp</button>
+                      <button type="button">Ver servicios</button>
+                    </div>
+                  </div>
+
+                  <div class="desktop-landing-mockup__phone">
+                    <div class="desktop-landing-mockup__phone-screen">
+                      <span class="desktop-landing-mockup__phone-pill">Online</span>
+                      <h4>Tu negocio, donde te buscan.</h4>
+                      <p>Google · Web · Instagram</p>
+
+                      <div class="desktop-landing-mockup__mini-map">
+                        <span></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="desktop-landing-mockup__services">
+                  <div>
+                    <span>
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M12 21s7-5.1 7-11a7 7 0 0 0-14 0c0 5.9 7 11 7 11Z" />
+                        <circle cx="12" cy="10" r="2.5" />
+                      </svg>
+                    </span>
+                    <strong>Google Maps</strong>
+                    <p>Perfil completo y mejor presentado.</p>
+                  </div>
+
+                  <div>
+                    <span>
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <rect x="4" y="5" width="16" height="14" rx="2" />
+                        <path d="M4 9h16" />
+                        <path d="M8 13h5" />
+                        <path d="M8 16h8" />
+                      </svg>
+                    </span>
+                    <strong>Sitio web</strong>
+                    <p>Landing rápida, clara y enfocada en consultas.</p>
+                  </div>
+
+                  <div>
+                    <span>
+                      <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M12 17.3 18.2 21l-1.7-7.1L22 9.1l-7.2-.6L12 2 9.2 8.5 2 9.1l5.5 4.8L5.8 21 12 17.3Z" />
+                      </svg>
+                    </span>
+                    <strong>Confianza</strong>
+                    <p>Fotos, reseñas y botones de contacto visibles.</p>
+                  </div>
+                </div>
+
+                <div class="desktop-landing-mockup__proof">
+                  <div>
+                    <strong>+32%</strong>
+                    <span>más consultas</span>
+                  </div>
+
+                  <div>
+                    <strong>4.9</strong>
+                    <span>promedio reseñas</span>
+                  </div>
+
+                  <div>
+                    <strong>24/7</strong>
+                    <span>presencia online</span>
+                  </div>
+                </div>
+
+                <div class="desktop-landing-mockup__cta">
+                  <p>¿Listo para mejorar cómo se ve tu negocio online?</p>
+                  <button type="button">Solicitar auditoría</button>
+                </div>
+              </article>
             </div>
           </div>
         </section>
