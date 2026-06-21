@@ -972,8 +972,8 @@
   .desktop-mockups-row {
     display: grid;
     order: 4;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 430px), 1fr));
-    gap: 24px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: clamp(12px, 2vw, 24px);
     align-items: stretch;
     width: 100%;
     margin-top: 64px;
@@ -981,7 +981,7 @@
 
   .desktop-mockups-row > article {
     width: 100%;
-    height: 100%;
+    height: 740px;
     min-width: 0;
     border-radius: 26px;
     box-shadow: 0 26px 66px rgba(8, 28, 36, 0.18);
@@ -992,6 +992,10 @@
   .desktop-mockups-row .desktop-landing-mockup {
     display: flex;
     flex-direction: column;
+  }
+
+  .desktop-mockups-row .desktop-landing-mockup {
+    container-type: inline-size;
   }
 
   .desktop-mockups-row .desktop-gbp-mockup__body,
@@ -1009,7 +1013,7 @@
   }
 
   .desktop-mockups-row .desktop-gbp-mockup__cover {
-    height: 142px;
+    height: 124px;
   }
 
   .desktop-mockups-row .desktop-gbp-mockup__body {
@@ -1026,13 +1030,13 @@
   }
 
   .desktop-mockups-row .desktop-gbp-mockup__main {
-    padding-top: 46px;
+    padding-top: 38px;
   }
 
   .desktop-mockups-row .desktop-gbp-mockup__header {
     display: grid;
-    gap: 10px;
-    margin-bottom: 16px;
+    gap: 8px;
+    margin-bottom: 12px;
   }
 
   .desktop-mockups-row .desktop-gbp-mockup__header h3 {
@@ -1046,19 +1050,19 @@
 
   .desktop-mockups-row .desktop-gbp-mockup__tabs {
     grid-template-columns: repeat(5, minmax(0, 1fr));
-    height: 48px;
+    height: 42px;
     margin-inline: -22px;
     padding-inline: 22px;
   }
 
   .desktop-mockups-row .desktop-gbp-mockup__tabs span {
-    height: 48px;
+    height: 42px;
     font-size: 11px;
   }
 
   .desktop-mockups-row .desktop-gbp-mockup__actions {
     gap: 8px;
-    padding: 18px 0;
+    padding: 12px 0;
   }
 
   .desktop-mockups-row .desktop-gbp-mockup__icon {
@@ -1069,11 +1073,15 @@
   .desktop-mockups-row .desktop-gbp-mockup__bottom {
     grid-template-columns: minmax(0, 1fr) minmax(150px, 0.8fr);
     gap: 14px;
-    padding-top: 16px;
+    padding-top: 12px;
+  }
+
+  .desktop-mockups-row .desktop-gbp-mockup__info-row {
+    min-height: 52px;
   }
 
   .desktop-mockups-row .desktop-gbp-mockup__map {
-    min-height: 154px;
+    min-height: 132px;
   }
 
   .desktop-mockups-row .desktop-ig-mockup__body {
@@ -1101,36 +1109,92 @@
 
   .desktop-mockups-row .desktop-landing-mockup__topbar {
     height: 54px;
-    padding: 0 18px;
+    padding: 0 clamp(12px, 1.4vw, 18px);
   }
 
   .desktop-mockups-row .desktop-landing-mockup__nav {
-    gap: 12px;
-    font-size: 10px;
+    gap: clamp(7px, 1vw, 12px);
+    font-size: clamp(8px, 0.85vw, 10px);
   }
 
   .desktop-mockups-row .desktop-landing-mockup__hero {
     min-height: 0;
-    grid-template-columns: minmax(0, 1fr) 150px;
-    gap: 20px;
-    padding: 26px 22px;
+    grid-template-columns: minmax(0, 1fr) clamp(104px, 12vw, 150px);
+    gap: clamp(10px, 1.6vw, 20px);
+    padding: clamp(16px, 2vw, 26px) clamp(14px, 1.8vw, 22px);
+  }
+
+  .desktop-mockups-row .desktop-landing-mockup__eyebrow {
+    margin-bottom: clamp(8px, 1vw, 14px);
+    padding: 5px 8px;
+    font-size: clamp(8px, 0.9vw, 10px);
   }
 
   .desktop-mockups-row .desktop-landing-mockup__copy h3 {
-    font-size: 30px;
+    margin-bottom: clamp(8px, 1vw, 14px);
+    font-size: clamp(21px, 2.6vw, 30px);
+  }
+
+  .desktop-mockups-row .desktop-landing-mockup__text {
+    margin-bottom: clamp(10px, 1.3vw, 20px);
+    font-size: clamp(10px, 1vw, 14px);
+    line-height: 1.35;
+  }
+
+  .desktop-mockups-row .desktop-landing-mockup__buttons {
+    gap: clamp(4px, 1.6cqw, 6px);
+    flex-wrap: wrap;
+  }
+
+  .desktop-mockups-row .desktop-landing-mockup__buttons button,
+  .desktop-mockups-row .desktop-landing-mockup__cta button {
+    min-width: 0;
+    max-width: 100%;
+    height: clamp(26px, 8cqw, 38px);
+    padding: 0 clamp(5px, 2.7cqw, 15px);
+    font-size: clamp(7.5px, 2.7cqw, 12px);
+    line-height: 1;
+    white-space: nowrap;
   }
 
   .desktop-mockups-row .desktop-landing-mockup__phone {
     justify-self: center;
-    width: 150px;
-    height: 200px;
+    width: clamp(104px, 12vw, 150px);
+    height: clamp(148px, 16vw, 200px);
+    padding: clamp(6px, 0.8vw, 10px);
+    border-radius: clamp(20px, 2.4vw, 30px);
+  }
+
+  .desktop-mockups-row .desktop-landing-mockup__phone-screen {
+    padding: clamp(10px, 1.2vw, 18px);
+    border-radius: clamp(16px, 1.8vw, 22px);
+  }
+
+  .desktop-mockups-row .desktop-landing-mockup__phone-pill {
+    margin-bottom: clamp(9px, 1.1vw, 16px);
+    padding: 5px 8px;
+    font-size: clamp(8px, 0.85vw, 10px);
+  }
+
+  .desktop-mockups-row .desktop-landing-mockup__phone-screen h4 {
+    font-size: clamp(15px, 1.8vw, 24px);
+  }
+
+  .desktop-mockups-row .desktop-landing-mockup__phone-screen p {
+    margin-bottom: clamp(9px, 1.1vw, 18px);
+    font-size: clamp(8px, 0.85vw, 11px);
+  }
+
+  .desktop-mockups-row .desktop-landing-mockup__mini-map {
+    height: clamp(46px, 7vw, 90px);
+    border-radius: clamp(12px, 1.6vw, 18px);
   }
 
   .desktop-mockups-row .desktop-landing-mockup__services,
   .desktop-mockups-row .desktop-landing-mockup__proof {
     flex: 0 0 auto;
-    padding: 12px 18px;
-    gap: 8px;
+    padding: clamp(8px, 1vw, 12px) clamp(12px, 1.4vw, 18px);
+    gap: clamp(5px, 0.8vw, 8px);
   }
 
   .desktop-mockups-row .desktop-landing-mockup__services {
@@ -1139,13 +1203,42 @@
 
   .desktop-mockups-row .desktop-landing-mockup__services div {
     min-height: 0;
-    padding: 10px;
+    padding: clamp(7px, 0.9vw, 10px);
+  }
+
+  .desktop-mockups-row .desktop-landing-mockup__services span {
+    width: clamp(24px, 2.4vw, 32px);
+    height: clamp(24px, 2.4vw, 32px);
+    margin-bottom: 6px;
+  }
+
+  .desktop-mockups-row .desktop-landing-mockup__services strong {
+    font-size: clamp(9px, 0.9vw, 12px);
+  }
+
+  .desktop-mockups-row .desktop-landing-mockup__services p,
+  .desktop-mockups-row .desktop-landing-mockup__proof span {
+    font-size: clamp(8px, 0.8vw, 11px);
+    line-height: 1.18;
+  }
+
+  .desktop-mockups-row .desktop-landing-mockup__proof div {
+    padding: clamp(7px, 0.9vw, 10px) clamp(8px, 1vw, 12px);
+  }
+
+  .desktop-mockups-row .desktop-landing-mockup__proof strong {
+    font-size: clamp(15px, 1.6vw, 20px);
   }
 
   .desktop-mockups-row .desktop-landing-mockup__cta {
     align-items: flex-start;
     flex-direction: column;
-    padding: 18px;
+    gap: 10px;
+    padding: clamp(12px, 1.4vw, 18px);
+  }
+
+  .desktop-mockups-row .desktop-landing-mockup__cta p {
+    font-size: clamp(12px, 1.2vw, 16px);
   }
 }
 
